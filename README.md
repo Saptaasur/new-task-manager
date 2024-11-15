@@ -1,46 +1,52 @@
-# Getting Started with Create React App
+# Task Manager Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
+The **Task Manager Application** is a lightweight, interactive web app designed to help users manage their daily tasks effectively. It includes functionality to:
+- Add tasks with priorities.
+- Mark tasks as completed.
+- Delete tasks.
+- Filter tasks using a search bar.
 
-## Available Scripts
+The app features an engaging UI with animations and a responsive design, making it visually appealing and user-friendly.
 
-In the project directory, you can run:
+## Features
+1. **Add Tasks**: Quickly create tasks with a default priority.
+2. **Search Functionality**: Filter tasks based on a search query.
+3. **Task Management**: Mark tasks as completed, update priority, or delete them.
+4. **Persistent Storage**: Tasks are stored locally in the browser and persist across sessions.
 
-### `npm start`
+## Setup and Launch
+### Prerequisites
+- Ensure you have [Node.js](https://nodejs.org/) installed on your system.
+- A modern browser like Chrome, Firefox, or Edge.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### Steps
+1. Clone the repository:
+   ```bash
+   git clone <repository-url>
+   cd task-manager
+Install dependencies:
+bash
+Copy code
+npm install
+Start the development server:
+bash
+Copy code
+npm start
+Open your browser and navigate to http://localhost:3000 to view the app.
+Build for Production
+To build a production-ready version of the app, run:
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+bash
+Copy code
+npm run build
+Assumptions
+Priority Levels: Each task has a priority (High, Medium, Low) with Medium as the default.
+Local Storage: The app uses browser local storage for saving tasks, assuming a single-user setup.
+Unique Task IDs: Task IDs are generated using timestamps (Date.now()), assuming no two tasks are added simultaneously.
+Technology Stack
+Frontend: React with TypeScript
+Styling: CSS with animations
+Local Storage: For persistent task management
+Contribution
+Contributions are welcome! Please fork the repository, create a feature branch, and submit a pull request.
